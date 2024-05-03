@@ -1,8 +1,6 @@
 *** Settings ***
 Resource           ../utils/base.resource
 
-*** Variables ***
-
 *** Keywords ***
 
 Quando insiro um produto no carrinho
