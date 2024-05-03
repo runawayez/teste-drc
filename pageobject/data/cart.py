@@ -1,0 +1,8 @@
+cartSummary                 = "//h1[contains(@class,'page-heading')]"
+cartCheckoutButton          = "(//span[contains(.,'Proceed to checkout')])[2]"
+cartShippingLogo            = "//h1[@class='page-heading'][contains(.,'Shipping:')]"
+cartTermsAccept             = "//input[contains(@type,'checkbox')]"
+cartPaymentOption           = "//a[@class='bankwire'][contains(.,'Pay by bank wire (order processing will be longer)')]"
+cartOrderSummary            = "//h1[@class='page-heading'][contains(.,'Order summary')]"
+cartConfirmOrder            = "//span[contains(.,'I confirm my order')]"
+cartSuccessToast            = "//p[@class='alert alert-success'][contains(.,'Your order on My Shop is complete.')]"
