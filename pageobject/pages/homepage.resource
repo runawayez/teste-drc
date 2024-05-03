@@ -2,7 +2,7 @@
 Resource           ../utils/base.resource
 
 *** Variables ***
-${BROWSER}                                    firefox
+${BROWSER}                                    headlessfirefox
 ${URL}                                        http://www.automationpractice.pl/index.php
 
 *** Keywords ***
@@ -22,12 +22,6 @@ E realizo o login
     Go To                                               url=${URL}
     Wait Until Element Is Visible                       ${homepageLogo}            timeout=10s
 
-Recarregar Homepage
-    Go To                                               url=${URL}/home
-    Register Keyword To Run On Failure                  Recarregar Homepage
-
-Capturar Tela
-    Capture Page Screenshot
-
 Fechar o navegador
+    Capture Page Screenshot
     Close Browser

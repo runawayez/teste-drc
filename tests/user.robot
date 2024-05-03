@@ -2,10 +2,8 @@
 Documentation      Essa suíte possui os testes relacionados a usuário
 Resource           ../pageobject/utils/base.resource
 
-Suite Setup       Abrir o navegador
-Test Setup        Recarregar Homepage
-Test Teardown     Capturar Tela
-Suite Teardown    Fechar o navegador
+Test Setup         Abrir o navegador
+Test Teardown      Fechar o navegador
 
 *** Test Cases ***
 

@@ -28,28 +28,25 @@ Atualmente temos uma configuração da nossa Pipeline com os testes funcionais d
 
 ## Instalação
 
-1. Clone este repositório para o seu sistema: `git clone https://dev.azure.com/fcsistemasinternos/Sistemas%20Internos/_git/automacao-qa`
-2. Clique em Generate Git Credentials e cole sua chave de acesso
-3. Abra o repositório com Open Folder do Vscode
+1. Clone este repositório para o seu sistema: `git clone https://github.com/runawayez/teste-drc.git`
+2. Abra o repositório com Open Folder do Vscode
 
 ## Executando os Testes
 
 Para executar os testes, siga estas etapas:
 
 1. Abra o terminal: `Ctrl+Shift+'`
-2. Execute todos os testes da suíte usando o comando de tag: `robot -d ./results -i regressivo-fcbr ./tests/`
-    2.1 Este comando faz com que todas as evidências permaneçam organizadas dentro da pasta /Results
+2. Execute todos os testes da suíte usando o comando de tag: `robot -d ./results -i pipeline ./tests/`
+    2.1 Este comando faz com que todas as evidências permaneçam organizadas dentro da pasta /results
 3. Caso queira rodar por Caso de Teste, utilize: `robot -d ./results -t "[TÍTULO DO CASO DE TESTE AQUI]" ./tests/register.robot`
-    3.1 Exemplo de caso específico: `robot -d ./results -t "Cenário de Teste 1: Validar que o módulo de Carta de Faturamento está funcionando corretamente" ./tests/modules.robot`
+    3.1 Exemplo de caso específico: `robot -d ./results -t "Cenário de Teste 1: Validar cenário de inserir um produto no carrinho" ./tests/purchase.robot`
 
 ## Estrutura do Projeto
 
 Explicação da estrutura de diretórios do projeto:
 
-- `custom-libraries`: Diretório onde são armazenadas as libraries personalizadas de nosso projeto.
-- `pageobject/data`: Diretório que contém o mapeamento XPath da página do Financial FC.
+- `pageobject/data`: Diretório que contém o mapeamento XPath da página.
 - `pageobject/pages`: Diretório que contém as Keywords que utilizaremos nos casos de teste.
-- `pageobject/testdata`: Diretório onde contém dados sensíveis como por exemplo um login e senha.
 - `pageobject/utils`: Diretório onde armanzenamos todos os Resources, Variables e Libraries de nosso projeto.
 - `tests/`: Este diretório contém os arquivos de teste escritos em formato .robot.
 - `azure-pipelines.yml`: Arquivo de configuração de nossa Pipeline.
